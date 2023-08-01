@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: white;
+font-family: 'Poppins', sans-serif;
+
+}
+/* main container */
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+/* login section */
+.login{
+    width: 40%;
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0d0f12;
+}
+
+section img{
+    height: 60px;
+    margin: 40px 0;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    background-color: none;
+    /* padding-left: 20%; */
+}
+.ae, .be{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+form button{
+    width: 60%;
+    height: 40px;
+    background-color: #2ea0d6;
+    border: none;
+}
+.eml, .pass{
+   background: none;
+   border: 1px solid rgb(131, 131, 131);
+    height: 40px;
+    padding-left: 10px;
+}
+form label{
+    font-size: 18px;
+} 
+.links{
+    width: 70%;
+    font-size: 16px;
+    /* text-decoration: none; */
+    /* margin-top: 40px; */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid rgb(140, 140, 140);
+}
+.links a{
+    text-decoration: none;
+    color: #2ea0d6;
+}
+.sgn{
+    padding-bottom: 20px;
+}
+.create{
+    width: 60%;
+    min-height :40px;
+    background-color: rgba(138,153,168,.25);
+    border: none;
+}
+
+/* footer login */
+footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.term{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.term p{
+    padding: 0 5px;
+}
+/* login section end */
+/* right scetion */
+.right{
+    width: 60%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/login-background.png);
+    background-size: cover;
+    background-position: center;
+}
+.right img{
+    height: 400px;
+    margin: 0;
+}
+.right button{
+    min-height: 50px;
+    width: 130px;
+    background-color: #FF1675;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    /* margin-top: 0; */
+}
+
+/* right section end */
+
+/* media query */
+@media(max-width: 900px) {
+    .right{
+        display: none;
+    }
+    .login{
+        width: 100%;
+        background-image: url(./login-background.png);   
+        background-size: cover;
+    }
+}
